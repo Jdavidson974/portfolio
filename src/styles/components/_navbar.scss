@@ -35,6 +35,7 @@
   display: none;
 
   & span {
+    transition: transform .3s, display .3s ease-in-out;
     width: 50px;
     height: 10px;
     display: block;
@@ -48,7 +49,7 @@
   @extend .flexRow;
   width: 60%;
   align-items: end;
-  transition: width 0.3s, height 0.3s;
+  transition: width .3s, height .3s;
 
   & .menu-list {
     @extend .flexRow;
@@ -105,5 +106,20 @@
 @media(max-width:330px) {
   .name {
     font-size: 10px;
+  }
+}
+
+.hamburger-animed {
+  & :nth-child(2) {
+    display: none;
+  }
+
+  & :nth-child(1) {
+    transform: rotate(135deg);
+  }
+
+  & :nth-child(3) {
+    transform: rotate(44deg);
+    margin-top: -15px;
   }
 }

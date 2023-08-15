@@ -17,10 +17,12 @@ export class ShowMenuDirective {
 
   toggleVisibility() {
     if (this.isVisible) {
+      this.renderer2.addClass(this.el.nativeElement, "hamburger-animed")
       this.renderer2.setStyle(this.menu, "width", "200px");
       this.renderer2.setStyle(this.menu, "height", "100vh");
       this.renderer2.setStyle(this.list, "display", "block");
     } else {
+      this.renderer2.removeClass(this.el.nativeElement, "hamburger-animed")
       this.renderer2.setStyle(this.menu, "width", "0px");
       this.renderer2.setStyle(this.menu, "height", "0vh");
       this.renderer2.setStyle(this.list, "display", "none");
