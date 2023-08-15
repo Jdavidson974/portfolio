@@ -2,4 +2,67 @@
   height: 70px;
   background: black;
   width: 100%;
+  @extend .flexRow;
+}
+
+.nav-logo {
+  width: 25%;
+  @extend .flexRow;
+}
+
+.logo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 60px;
+    height: 60px;
+
+  }
+}
+
+.name {
+  @extend .text-gradient;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu {
+
+  @extend .flexRow;
+  width: 30%;
+  align-items: end;
+
+  & .menu-list {
+    @extend .flexRow;
+    list-style: none;
+    justify-content: end;
+    padding-right: 40px;
+    margin: auto;
+    width: 100%;
+
+    & li {
+      @extend .text-gradient;
+      margin: 0 10px 0 auto;
+    }
+  }
+
+
+}
+
+@media screen,
+(max-width:1024px) {
+  .nav-logo {
+    width: 80%;
+  }
+
+  .nav-menu {
+    width: 0%;
+    height: 0%;
+    display: none;
+  }
 }

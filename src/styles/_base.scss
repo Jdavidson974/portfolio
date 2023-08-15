@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(45deg, white, #CD8D0B 80%);
+  font-weight: bold;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.flexRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.flexCol {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
