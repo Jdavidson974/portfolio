@@ -9,14 +9,15 @@
       </span>
     </div>
   </div>
-  <div class="nav-menu">
-    <ul class="menu-list">
-      <li>Test</li>
-      <li>Test</li>
-      <li>Test</li>
+  <div #menu class="nav-menu">
+    <ul #menuList class="menu-list">
+      <li>Accueil</li>
+      <li>Compétences</li>
+      <li>Mes projets</li>
+      <li>Contact</li>
     </ul>
   </div>
-  <div class="btn-hamburger">
+  <div appShowMenu [list]="menuList" [menu]="menu" class="btn-hamburger">
     <span></span>
     <span></span>
     <span></span>

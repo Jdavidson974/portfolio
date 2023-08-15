@@ -5,12 +5,14 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './components/layout/layout.component';
 import { SharedModule } from '../shared/shared.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ShowMenuDirective } from './directives/show-menu.directive';
 
 
 @NgModule({
   declarations: [
     LayoutComponent,
-    NavbarComponent
+    NavbarComponent,
+    ShowMenuDirective
   ],
   imports: [
     CommonModule,

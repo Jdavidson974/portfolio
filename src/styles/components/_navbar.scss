@@ -45,10 +45,10 @@
 }
 
 .nav-menu {
-
   @extend .flexRow;
-  width: 30%;
+  width: 60%;
   align-items: end;
+  transition: width 0.3s, height 0.3s;
 
   & .menu-list {
     @extend .flexRow;
@@ -80,9 +80,25 @@
   }
 
   .nav-menu {
-    width: 0%;
-    height: 0%;
-    display: none;
+    background: linear-gradient(90deg, white, #CD8D0B);
+    position: absolute;
+    width: 0px;
+    height: 0vh;
+    top: 100%;
+    display: block;
+    text-align: center;
+
+    & .menu-list {
+      display: none;
+      margin-top: 50px;
+
+      & li {
+        margin-top: 5px;
+        background: none;
+        -webkit-text-fill-color: black;
+        color: black !important;
+      }
+    }
   }
 }
 
