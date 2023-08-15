@@ -8,6 +8,7 @@
 .nav-logo {
   width: 25%;
   @extend .flexRow;
+  cursor: pointer;
 }
 
 .logo {
@@ -65,6 +66,7 @@
     & li {
       @extend .text-gradient;
       margin: 0 10px 0 auto;
+      cursor: pointer;
     }
   }
 

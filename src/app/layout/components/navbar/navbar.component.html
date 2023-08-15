@@ -1,5 +1,5 @@
 <div class="navbar">
-  <div class="nav-logo">
+  <div class="nav-logo" routerLink="/">
     <div class="logo">
       <img src="/assets/img/logo.png">
     </div>
@@ -11,10 +11,10 @@
   </div>
   <div #menu class="nav-menu">
     <ul #menuList class="menu-list">
-      <li>Accueil</li>
-      <li>Compétences</li>
-      <li>Mes projets</li>
-      <li>Contact</li>
+      <li routerLink="/">Accueil</li>
+      <li routerLink="/mes-competences">Compétences</li>
+      <li routerLink="/mes-projets">Mes projets</li>
+      <li routerLink="/contact">Contact</li>
     </ul>
   </div>
   <div class="w-20 hamburger">
