@@ -58,7 +58,7 @@
   & .menu-list {
     @extend .flexRow;
     list-style: none;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 40px;
     margin: auto;
     width: 100%;
@@ -92,7 +92,7 @@
   .hamburger {
     display: flex;
     width: 20%;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .btn-hamburger {
