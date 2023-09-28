@@ -3,9 +3,19 @@ import { AfterViewInit, Directive, ElementRef, HostListener, Input, Renderer2 } 
 @Directive({
   selector: '[appShowMenu]'
 })
-export class ShowMenuDirective {
+export class ShowMenuDirective implements AfterViewInit {
 
   constructor(private el: ElementRef, private renderer2: Renderer2) { }
+
+  ngAfterViewInit(): void {
+    this.renderer2.listen('window', 'click', (e: any) => {
+      const windowSize: number = window.innerWidth
+      // permet d'appliquer la fonction onclikoutside si le client est en mode mobile/tablette
+      if (windowSize <= 1024) {
+        this.onClickOutside(e);
+      }
+    })
+  }
   isVisible: boolean = false
   @Input('list') list !: HTMLUListElement;
   @Input('menu') menu !: HTMLDivElement;
@@ -41,6 +51,19 @@ export class ShowMenuDirective {
     } else {
       this.toggleVisibility();
     }
+  }
 
+  // Permet de detecter le click en dehors du menu pour le cacher 
+  onClickOutside(e: any) {
+    // Cibles à verifier 
+    const menu = this.list.parentElement;
+    const cibleParent = e.target.parentElement;
+    const cible = e.target;
+
+    // Condition pour fermer le menu 
+    if (e.target != menu && cibleParent != this.el.nativeElement && cible != this.el.nativeElement) {
+      this.isVisible = false;
+      this.toggleVisibility();
+    }
   }
 }
