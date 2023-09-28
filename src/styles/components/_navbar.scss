@@ -3,6 +3,7 @@
   background: black;
   width: 100%;
   @extend .flexRow;
+  position: fixed;
 }
 
 .nav-logo {
