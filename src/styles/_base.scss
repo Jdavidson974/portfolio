@@ -1,19 +1,26 @@
+$linear : -webkit-linear-gradient(45deg, white, #CD8D0B 80%);
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   height: 100vh;
+  background: #eeeaea
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(45deg, white, #CD8D0B 80%);
+  background: $linear;
   font-weight: bold;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .bg-gradient {
-  background: -webkit-linear-gradient(45deg, white, #CD8D0B 80%);
+  background: $linear;
 }
 
 .flexRow {
@@ -26,4 +33,28 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.separator {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+  border-radius: 5px;
+}
+
+.links {
+  color: #CD8D0B;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.content {
+  padding: 10px;
 }

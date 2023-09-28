@@ -68,6 +68,10 @@
       @extend .text-gradient;
       margin: 0 10px 0 auto;
       cursor: pointer;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
     }
   }
 
