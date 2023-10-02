@@ -2,7 +2,7 @@
     @extend .flexRow;
     justify-content: center;
 
-    & .front-title {
+    & .skills-title {
         width: 100%
     }
 
@@ -46,5 +46,11 @@
 @media (max-width:320px) {
     .skills-content {
         width: 100% !important;
+    }
+
+    .skills-title {
+        & h1 {
+            text-align: center;
+        }
     }
 }

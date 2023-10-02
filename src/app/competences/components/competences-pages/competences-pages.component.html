@@ -1,6 +1,6 @@
 <div class="content">
     <div class="skills-container my-5">
-        <div class="front-title mb-3">
+        <div class="skills-title mb-3">
             <h1>Front-end</h1>
         </div>
         <ng-container *ngFor="let elem of frontArray">
@@ -13,23 +13,10 @@
         </ng-container>
     </div>
     <div class="skills-container my-5">
-        <div class="front-title mb-3">
+        <div class="skills-title mb-3">
             <h1>Backend-end</h1>
         </div>
         <ng-container *ngFor="let elem of backArray">
-            <div class="skills-content">
-                <div class="img-front">
-                    <img [src]="elem.url">
-                </div>
-                <h2>{{elem.title}}</h2>
-            </div>
-        </ng-container>
-    </div>
-    <div class="skills-container my-5">
-        <div class="front-title mb-3">
-            <h1>Bases de données</h1>
-        </div>
-        <ng-container *ngFor="let elem of bddArray">
             <div class="skills-content">
                 <div class="img-front">
                     <img [src]="elem.url">

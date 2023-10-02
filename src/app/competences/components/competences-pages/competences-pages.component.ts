@@ -57,6 +57,10 @@ export class CompetencesPagesComponent {
       url: "assets/img/nodejs.png"
     },
     {
+      title: 'TypeScript',
+      url: "assets/img/typescript.png"
+    },
+    {
       title: 'Symfony 4 ',
       url: "assets/img/symfony.png"
     },
@@ -65,12 +69,13 @@ export class CompetencesPagesComponent {
       url: "assets/img/laravel.png"
     },
     {
+      title: 'Php',
+      url: "assets/img/php.png"
+    },
+    {
       title: 'Stripe',
       url: "assets/img/stripe.png"
     },
-
-  ];
-  bddArray: skillsAray[] = [
     {
       title: 'Mysql',
       url: "assets/img/mysql.png"
@@ -79,8 +84,5 @@ export class CompetencesPagesComponent {
       title: 'Mongodb',
       url: "assets/img/mongo.png"
     }
-
   ];
-
-
 }
