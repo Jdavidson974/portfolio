@@ -1,10 +1,10 @@
-.exp-content {
+.exp-project-content {
     @extend .flexRow;
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
 }
 
-.exp-img {
+.exp-project-img {
     padding: 5px;
     width: 20%;
     @extend .flexRow;
@@ -16,7 +16,7 @@
     }
 }
 
-.exp-explication {
+.exp-project-explication {
     padding: 5px;
     width: 80%;
     @extend .flexRow;
@@ -24,7 +24,9 @@
 
     & p {
         width: 100%;
-        margin: 0
+        margin: 0;
+        text-align: justify;
+
     }
 
     & a {
@@ -32,8 +34,12 @@
     }
 }
 
+.text-primaire {
+    text-align: justify;
+}
+
 @media (max-width:992px) {
-    .exp-img {
+    .exp-project-img {
         & img {
             width: 100%;
         }
@@ -41,7 +47,7 @@
 }
 
 @media (max-width:768px) {
-    .exp-explication {
+    .exp-project-explication {
         font-size: 12px;
     }
 
@@ -51,17 +57,15 @@
 }
 
 @media (max-width:475px) {
-    .exp-explication {
+    .exp-project-explication {
         font-size: 10px;
     }
 
     .text-primaire {
         font-size: 10px;
     }
-}
 
-@media (max-width:420px) {
-    .exp-img {
+    .exp-project-img {
         width: 100%;
 
         & img {
@@ -69,7 +73,7 @@
         }
     }
 
-    .exp-explication {
+    .exp-project-explication {
         width: 100%;
         font-size: 12px;
         margin-top: 10px;
@@ -86,5 +90,4 @@
     .text-primaire {
         font-size: 12px;
     }
-
 }

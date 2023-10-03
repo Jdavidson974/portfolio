@@ -10,29 +10,22 @@ export class HomePageComponent {
 
   expArray: Experience[] = [
     {
-      img: "assets/img/logo.png",
-      content: "Projet Stanlinks , ce projet est fait avec Angular et NestJs pour l'API.\
-      Ce projet est une plateforme de partage de liens destinée aux utilisateurs des réseaux sociaux, accessible via une page personnalisable.",
-      link: "https://stlk.fr"
+      img: "assets/img/nautilus.png",
+      content: "J'ai effectué une alternance d'un an chez Nautilus pour suivre la formation CDA (Concepteur Développeur d'Application).\
+      Mes principales missions étaient de réaliser du développement sur des sites web afin d'y ajouter des fonctionnalités demandées par le client. De plus, j'avais la responsabilité de travailler sur mon projet de fin d'année lorsque je n'avais pas de demandes spécifiques de la part des clients.",
     },
     {
-      img: "assets/img/hope.jpg",
-      content: "Projet réservation sur site hope-location, sur ce site Wordpress j'ai dû ajouter un système de réservation en ligne avec paiement en ligne.\
-      Le paiement en ligne est géré grâce à Stripe, tandis que les réservations sont effectuées à l'aide de shortcodes qui communiquent avec l'API d'un prestataire appelé MyRentalCar.",
-      link: "https://www.hope-location.re",
+      img: "assets/img/inotech.png",
+      content: "J'ai effectué un stage de 2 mois chez Inotech pendant ma formation en DWWM (Développeur Web et Web Mobile).\
+      Mes principales missions étaient de réaliser du développement sur un site de location de voiture en y ajoutant une fonctionnalité code promos et devis.",
     },
     {
-      img: "assets/img/manzer.jpg",
-      content: "Projet Manzer , ce projet est un projet fictif réalisé en formation, qui permet de la gestion de repas en ligne avec un compte Google.\
-      Ce projet est fait avec Angular est NestJs pour L'API ",
-      link: "https://ecf.sautronjeandavidson.re"
+      img: "assets/img/afpar.png",
+      content: "J'ai effectué une formation de 9 mois en DWWM (Développeur Web et Web Mobile) afin d'approfondir mes connaissances en développement web."
     },
     {
-      img: "assets/img/logo.png",
-      content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, aliquam quidem autem veritatis,\
-            architecto voluptatibus sit temporibus dolorum praesentium necessitatibus blanditiis doloremque ea iure\
-            libero rerum dolores explicabo quas optio.",
+      img: "assets/img/afpar.png",
+      content: "J'ai effectué une formation de 6 mois en tant que digital codeur pour acquérir les bases de la programmation et comprendre tout l'écosystème informatique lié au web.",
     },
-
   ]
 }

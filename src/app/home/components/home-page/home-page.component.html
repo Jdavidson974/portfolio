@@ -16,7 +16,7 @@
         <h3>Mon parcours</h3>
         <div class="text-parcours">
             <p class="text-primaire">
-                J'ai arrêté l'école en 3e car je n'aimais pas trop les cours, et aussi parce que je voulais commencer à
+                J'ai arrêté l'école en 3e pour commencer à
                 travailler dès mon jeune âge. J'ai donc suivi un apprentissage en tant que vendeur dans une boulangerie
                 (vente alimentaire) pendant 2 ans. J'ai obtenu mon CAP, puis j'ai travaillé pendant 6 mois dans un
                 Burger King en France.
@@ -41,20 +41,14 @@
     <div class="separator"></div>
     <div class="exp my-5">
         <h3>Mes experiences</h3>
-        <div class="text-exp">
+        <div class="text-exp-project">
             <ng-container *ngFor="let exp of expArray">
-                <div class="exp-content">
-                    <div class="exp-img">
+                <div class="exp-project-content">
+                    <div class="exp-project-img">
                         <img [src]="exp.img">
                     </div>
-                    <div class="exp-explication">
+                    <div class="exp-project-explication">
                         <p>{{exp.content}}</p>
-                        <ng-container *ngIf="exp.link">
-                            <a target="_blank" class="links" [href]="exp.link">Lien du projet</a>
-                        </ng-container>
-                        <ng-container *ngIf="exp.git">
-                            <a target="_blank" class="links" [href]="exp.git">Lien du github</a>
-                        </ng-container>
                     </div>
                 </div>
             </ng-container>
