@@ -36,6 +36,9 @@
         font-size: 12px;
     }
 
+    .text-primaire {
+        font-size: 12px;
+    }
 }
 
 @media (max-width:475px) {
@@ -43,6 +46,9 @@
         font-size: 10px;
     }
 
+    .text-primaire {
+        font-size: 10px;
+    }
 }
 
 @media (max-width:420px) {
@@ -62,6 +68,10 @@
         & p {
             text-align: center;
         }
+    }
+
+    .text-primaire {
+        font-size: 12px;
     }
 
 }
