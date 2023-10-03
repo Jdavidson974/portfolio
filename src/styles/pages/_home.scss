@@ -29,7 +29,8 @@
 
     }
 
-    & a {
+    & div {
+        @extend .flexRow;
         width: 100%;
     }
 }
@@ -82,8 +83,8 @@
             text-align: center;
         }
 
-        & a {
-            text-align: center;
+        & div {
+            justify-content: center;
         }
     }
 

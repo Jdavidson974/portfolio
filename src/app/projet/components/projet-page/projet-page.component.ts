@@ -9,7 +9,7 @@ import { Projet } from '../../models/projet.model';
 export class ProjetPageComponent {
   projectArray: Projet[] = [
     {
-      img: "assets/img/logo.png",
+      img: "assets/img/stanlinks.svg",
       content: "Projet Stanlinks , ce projet est fait avec Angular et NestJs pour l'API.\
       Ce projet est une plateforme de partage de liens destinée aux utilisateurs des réseaux sociaux, accessible via une page personnalisable.",
       link: "https://stlk.fr"

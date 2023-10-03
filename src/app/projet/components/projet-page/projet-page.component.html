@@ -10,10 +10,14 @@
                     <div class="exp-project-explication">
                         <p>{{exp.content}}</p>
                         <ng-container *ngIf="exp.link">
-                            <a target="_blank" class="links" [href]="exp.link">Lien du projet</a>
+                            <div>
+                                <a target="_blank" class="links" [href]="exp.link">Lien du projet</a>
+                            </div>
                         </ng-container>
                         <ng-container *ngIf="exp.git">
-                            <a target="_blank" class="links" [href]="exp.git">Lien du github</a>
+                            <div>
+                                <a target="_blank" class="links" [href]="exp.git">Lien du github</a>
+                            </div>
                         </ng-container>
                     </div>
                 </div>
