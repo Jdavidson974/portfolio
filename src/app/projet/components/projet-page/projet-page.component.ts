@@ -32,6 +32,12 @@ export class ProjetPageComponent {
       L'application est une application mobile réalisée avec Flutter. Cette application sert principalement d'interface pour gérer une batterie Bluetooth.",
       git: "https://github.com/Jdavidson974/tropikelec"
     },
+    {
+      img: "assets/img/react.png",
+      content: "Projet React-Cook, ce projet est un projet fictif réaliser en formation.\
+      L'application est en React et permet d'afficher des repas et la preparation d'un repas grâce a l'API themealdb.",
+      link: "https://jdavidson974.github.io/Jdavidson974.github.io-react-cook-prod-public/"
+    },
 
   ]
 }
