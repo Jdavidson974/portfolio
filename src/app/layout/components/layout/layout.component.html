@@ -2,3 +2,26 @@
 <div class="container p-3">
     <router-outlet></router-outlet>
 </div>
+<div class="footer">
+    <ng-container *ngFor="let contact of contactArray">
+        <div class="contact-block">
+            <!-- icon  -->
+            <ng-container *ngIf="contact.context == 'tel'">
+                <a class="links" [href]="'tel:' + contact.value">
+                    <fa-icon [icon]=" contact.icon" class="fa-2x  cursor"></fa-icon>
+                </a>
+            </ng-container>
+            <ng-container *ngIf="contact.context == 'mail'">
+                <a class="links" [href]="'mailto:' + contact.value">
+                    <fa-icon [icon]=" contact.icon" class="fa-2x  cursor"></fa-icon>
+                </a>
+            </ng-container>
+            <ng-container *ngIf="!contact.context">
+                <a class="links" [href]="contact.value" target="_blank">
+                    <fa-icon [icon]=" contact.icon" class="fa-2x  cursor"></fa-icon>
+                </a>
+            </ng-container>
+
+        </div>
+    </ng-container>
+</div>

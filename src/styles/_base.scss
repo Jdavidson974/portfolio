@@ -59,3 +59,20 @@ body {
   margin-top: 30px;
   padding: 10px;
 }
+
+.footer {
+  @extend .flexRow;
+  background-color: black;
+  height: 100px;
+  justify-content: center;
+  padding: 25px;
+}
+
+.contact-block {
+  margin: auto auto;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
